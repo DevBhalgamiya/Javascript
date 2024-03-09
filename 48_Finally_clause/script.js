@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const f = () => {
     try {
       let a = 0;
@@ -18,4 +19,26 @@ const f = () => {
   }
   f()
   console.log("End")
+=======
+const f = () => {
+    try {
+      let a = 0;
+      // console.log(program)
+      console.log("Program ran successfully")
+      return 
+    }
+    catch (err) {
+      console.log("This is an error")
+      console.log(p)
+    }
+    finally {
+      console.log("I am good boy")
+      // Close the file
+      // Exit the loop
+      // Write to the log file
+    }
+  }
+  f()
+  console.log("End")
+>>>>>>> 32b50c0124ddc156fbf7a689e4ab4fffecb94375
   

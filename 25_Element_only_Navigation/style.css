@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     height: 100%;
     width: 100%;
@@ -16,4 +17,24 @@ ul{
 ul li{
     list-style: none;
     margin: 0 23px;
+=======
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+ul{
+    display:flex;
+    background: gray;
+    margin: 0;
+    padding: 15px 0;
+    color: white;
+}
+  
+ul li{
+    list-style: none;
+    margin: 0 23px;
+>>>>>>> 32b50c0124ddc156fbf7a689e4ab4fffecb94375
 }

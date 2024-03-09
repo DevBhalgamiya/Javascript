@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const createTodo = async (todo) => {
     let options = {
       method: "POST",
@@ -28,4 +29,36 @@ const createTodo = async (todo) => {
     console.log(await getTodo(6))
   }
   
+=======
+const createTodo = async (todo) => {
+    let options = {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json"
+      },
+      body: JSON.stringify(todo),
+    }
+    let p = await fetch('https://jsonplaceholder.typicode.com/posts', options)
+    let response = await p.json()
+    return response
+  }
+  
+  const getTodo = async (id)=>{
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts/' + id)
+    let r = await response.json()
+    return r
+  }
+  
+  const mainFunc = async () => {
+    let todo = {
+      title: 'Dev',
+      body: 'bhau',
+      userId: 183,
+    }
+    let todor = await createTodo(todo)
+    console.log(todor)
+    console.log(await getTodo(6))
+  }
+  
+>>>>>>> 32b50c0124ddc156fbf7a689e4ab4fffecb94375
   mainFunc()
